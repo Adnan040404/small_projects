@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Advanced Notes App</title>
+</head>
+<body>
+  <header>
+    <h1>📝 Advanced Notes App</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search notes..." />
+      <select id="sort">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+        <option value="alpha">A-Z</option>
+      </select>
+      <button id="exportBtn">📤 Export</button>
+      <input type="file" id="importInput" hidden />
+      <button id="importBtn">📥 Import</button>
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+    <button class="add" id="add"><i class="fas fa-plus"></i> Add Note</button>
+  </header>
+
+  <main id="notesContainer"></main>
+
+  <!-- Modal for editing -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <input type="text" id="noteTitle" placeholder="Title..." />
+      <textarea id="noteText"></textarea>
+      <div class="editor-tools">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#ffffff">
+        <span id="wordCount">0 words</span>
+      </div>
+      <div class="preview">
+        <h3>Preview</h3>
+        <div id="previewArea"></div>
+      </div>
+      <button id="saveNote">💾 Save</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

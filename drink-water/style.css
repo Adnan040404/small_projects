@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+  --bg: #f4f9ff;
+  --text: #222;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+body.dark {
+  --bg: #1e1e2f;
+  --text: #f4f4f4;
+  --border-color: #6ab3f8;
+  --fill-color: #3d8bfd;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-section {
+  margin: 20px 0;
+}
+
+.cup {
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.remained {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  height: 0;
+  transition: height 0.6s ease;
+  color: white;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.cup-small {
+  height: 95px;
+  width: 60px;
+  border: 2px solid var(--border-color);
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255,255,255,0.9);
+  cursor: pointer;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.cup-small.full {
+  background-color: var(--fill-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+.motivation {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#history {
+  list-style: none;
+  padding: 0;
+}
+
+#history li {
+  margin: 5px 0;
+}
+
+.actions {
+  margin-top: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydration Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💧 Hydration Tracker</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <section class="goal-section">
+    <label for="goal">Daily Goal (Liters): </label>
+    <input type="number" id="goal" min="1" max="10" value="2" />
+    <button id="set-goal">Set Goal</button>
+  </section>
+
+  <div class="cup">
+    <div class="remained" id="remained">
+      <span id="liters"></span>
+      <small>Remaining</small>
+    </div>
+    <div class="percentage" id="percentage"></div>
+  </div>
+
+  <p class="text">Tap a glass to add water</p>
+  <div class="cups" id="cups"></div>
+
+  <section class="motivation" id="motivation"></section>
+
+  <h2>📅 Last 7 Days</h2>
+  <ul id="history"></ul>
+
+  <div class="actions">
+    <button id="reset">Reset Today</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

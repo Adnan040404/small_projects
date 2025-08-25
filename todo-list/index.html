@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Advanced Todo App</title>
+</head>
+<body>
+  <h1>todos</h1>
+  
+  <form id="form">
+    <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
+    <select id="priority">
+      <option value="low">Low 🔵</option>
+      <option value="medium">Medium 🟡</option>
+      <option value="high">High 🔴</option>
+    </select>
+    <button type="submit">Add</button>
+  </form>
+
+  <div class="filters">
+    <button data-filter="all" class="filter active">All</button>
+    <button data-filter="active" class="filter">Active</button>
+    <button data-filter="completed" class="filter">Completed</button>
+  </div>
+
+  <ul class="todos" id="todos"></ul>
+
+  <div class="progress">
+    <div class="bar" id="progress-bar"></div>
+  </div>
+  
+  <small>Left click = toggle complete | Right click = delete</small>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Advanced Random Image Feed</title>
+</head>
+<body>
+  <header>
+    <h1>📸 Advanced Random Image Feed</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search category (nature, cars, space...)" />
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="imageContainer" class="masonry"></div>
+  </main>
+
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+    <button id="downloadBtn">⬇ Download</button>
+    <button id="likeBtn">❤️ Like</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
