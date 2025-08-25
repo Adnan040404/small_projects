@@ -13,7 +13,21 @@ Each project focuses on improving different front-end development skills, from D
 4. **Drink Water Tracker** – A hydration tracker with progress visualization.  
 5. **Heart Animation** – Beautiful CSS & JS animated hearts.  
 6. **Progress Steps** – Interactive progress bar steps with navigation.  
-7. **Typing Game** – Typing speed test game with dynamic word generation.  
+7. **Typing Game** – Typing speed test game with dynamic word generation.
+
+📦 js-projects
+ ┣ 📂 random-image-feed
+ ┃ ┣ 📜 index.html
+ ┃ ┣ 📜 style.css
+ ┃ ┗ 📜 script.js
+ ┣ 📂 todo-list
+ ┣ 📂 movie-app
+ ┣ 📂 drink-water
+ ┣ 📂 heart-animation
+ ┣ 📂 progress-steps
+ ┣ 📂 typing-game
+ ┗ 📜 README.md  ← common readme
+
 
 ---
 
