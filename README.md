@@ -28,8 +28,10 @@ Each project focuses on improving different front-end development skills, from D
  ┣ 📂 typing-game
  ┗ 📜 README.md  ← common readme
 
+👨‍💻 Author
 
----
+Muhammad Adnan
+📌 GitHub: Adnan040404
 
 ## 🛠️ Tech Stack
 - **HTML5**
